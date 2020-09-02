@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+    <head> 
+        <meta charset="utf-8" /> 
+        <title>Canvas Recording Application</title>
+        <link rel="stylesheet" href="recorder.css"/>
+    </head>
+
+    <body>
+        <div id="welcome"> 
+            <h3> Welcome to Canvas!</h3>
+            <p> Click m' Drag anywhere in the box below to draw</p>
+            <p> You can even change the color of your brush using any <em> hex</em> code</p>
+        </div>
+        <div id="status"> 
+            <h3> Status: </h3>
+        </div>
+        <div id="instructions">
+            <h3> Recording Instructions:</h3>
+            <ul>
+                <li> Click 'Start Recording'</li>
+                <li> Draw whatever you want (you can change colors too)</li>
+                <li> When done, click 'Stop Recording'</li>
+                <li> Watch your recording by clicking 'Play'</li>
+                <li> Or save it by clicking 'Save Recording'</li>
+            </ul>
+        </div>
+        <div id="buttons">
+            <input type="button" id="start recording" value="Start Recording"/>
+            <input type="button" id="stop recording" value="Stop Recording"/> 
+            <input type="button" id="play" value="Play"/> 
+            <input type="button" id="save recording" value="Save Recording"/>
+            <input type="button" id="retrieve recording" value="Retreive Recording"/> 
+            <input type="button" id="clear canvas" value="Clear Canvas"/>
+        </div> <br> <br>
+        
+        <canvas id="canvas" width="400" height="300"></canvas> <br> <br>
+        <!-- <canvas id="canvas"></canvas> <br> <br> -->
+        <label for="favcolor">Change color:</label>
+         <input type="color" id="favcolor" name="favcolor" value="#ff0000">
+         <!-- <input type="submit"> -->
+
+         <script src="recorder.js"></script>
+    </body>
+</html>
